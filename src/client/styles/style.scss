@@ -1,0 +1,209 @@
+
+#app{
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder{
+    height: auto;
+    width: auto;
+}
+
+#holder-city{
+    background-color:rgb(224, 224, 224);
+    display:grid;
+    padding: 1em;
+    margin: 0;
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#holder-entery{
+    display: inline-flex;
+}
+
+.holder.headline{
+    text-align: center;
+    font-size: 50px;
+    margin:auto;
+    width: auto;
+    height: 250px;
+    position: absolute;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:inline;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin: auto;
+    padding-right: 5px;
+    color: black;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:rgb(240, 245, 253);
+    color:black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    text-align: center;
+}
+
+button{
+    width: 250px;
+    height: 70px;
+    background: #507ddd;
+    color: black;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px #444;
+    margin: 10px;
+}
+
+.card{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1200px 1fr;
+}
+.card-body{
+    font-size: 25px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    
+}
+
+#card-img{
+    width: 100%;
+    height: 400px;
+    padding: 1px;
+    border: 1px solid #021a40;
+}
+
+.image {
+    background-image: url("../image/photo.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 2px solid black;
+  }
+
+  .text-top {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+h1{
+    font-size: 70px;
+    color:black;
+}
+
+p{
+    font-size: 30px;
+    color:black;
+}
+
+.footerBox {
+    text-align: center;
+    border-top: 2px solid gray;
+    padding: 5px;
+    background-color: rgb(219, 247, 255);
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+/* Mobile */
+@media (max-width: 400px){
+    #holder-entery{
+     display: inline;
+    }
+    #card-img-top{
+     width: 355px;
+     height: 200px;
+    }
+}
+
+/* DeskTop */
+@media (min-width: 961px) {
+    #holder-entery{
+        display: inline; 
+    }
+    input{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+}
+
+/* tablet */
+@media (min-width: 401px) and (max-width:960px) {
+    #app{
+        height: auto;
+        width: auto;
+    }
+    body{
+        height: 1000px;
+        width: 100%;
+    }
+    #holder-entery{
+        display: inline;
+    
+    }
+    input{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+
+
+

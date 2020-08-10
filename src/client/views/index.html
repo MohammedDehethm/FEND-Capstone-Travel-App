@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel APP</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div class="image">
+      <div class="text-top">
+        <h1>Travel App</h1>
+      </div>
+    </div>
+    <form action="/action_page.php"></form>
+    <div id="holder-city">
+
+      <p>It's Time to Travel</p>
+      <div id="holder-entery">
+        <label for="city">Enter City:</label>
+        <input type="text" id="cityName" placeholder="enter city name" required>
+        <label for="Adata">Arrival Date:</label>
+        <input type="date" id="departure" name="DepartureDate" required>
+        <label for="Rdata">Return date:</label>
+        <input type="date" id="return" name="ReturnDate" required>
+      </div>
+      <div>
+        <button id="generate" type="submit"> submint </button>
+      </div>
+    </div>
+    </form>
+  </div>
+  <div class="holder entry">
+    <div id="entryHolder">
+      <div class="title">The Last Trip</div>
+      <div id="card">
+        <div>
+          <img id="card-img" alt="Card image">
+        </div>
+        <div class="card-body">
+          <p id="country"></p>
+          <p id="city"></p>
+          <p id="status"></p>
+          <p id="temperature"></p>
+          <div>
+            <button id="btnDelete" type="reset">Remove the trip</button>
+            <button id="print" type="reset">Print the trip</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footerBox">
+
+    <div class="text">
+      <p><em>Travel App</em></p>
+      <p>Misk Academy</p>
+      <p>@Udacity</p>
+    </div>
+  </footer>
+  </div>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+
+</body>
+
+</html>
